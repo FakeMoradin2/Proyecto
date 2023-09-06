@@ -40,17 +40,6 @@ h2 {
     padding-bottom: 2rem;
 }
 
-button {
-    background-color: #007bff;
-    color: white; 
-    font-weight: bold; 
-    padding: 10px 20px; 
-    border: none;
-    border-radius: 30px; 
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
 button:hover {
     background-color: #0056b3; 
 }
