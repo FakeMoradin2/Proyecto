@@ -6,8 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-
-    <title>Gastronomia</title>
+    <title>Contacto</title>
 </head>
 <body class="bg-gray-300">
     <nav class="bg-white border-gray-200 dark:bg-gray-900">
@@ -25,7 +24,7 @@
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
-                        <a href="#inicio" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Inicio</a>
+                        <a href="index.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Inicio</a>
                     </li>
                     <li>
                         <a href="recetas.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Recetas</a>
@@ -34,33 +33,44 @@
                         <a href="Chefs.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Chefs</a>
                     </li>
                     <li>
-                        <a href="Contacto.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">contacto</a>
+                        <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section class="Inicio bg-gray-200" id="inicio">
-        <div class="Contenido text-center py-20">
-            <h2 class="text-6xl text-gray-800">Bienvenido</h2>
-            <div class="image-container mt-10">
-                <img class="imgBackground w-full rounded-lg shadow-lg" src="img/imagen1.jpg" alt="imagen fondo">
-                <form class="mt-5">
-                    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Receta</label>
-                    <div class="relative">
-                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                            </svg>
-                        </div>
-                        <input type="search" id="default-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Recetas, Chefs..." required>
-                        <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">buscar</button>
-                    </div>
-                </form>
+    <div class="bg-gray-300 flex items-center justify-center my-4">
+        <div class="grid grid-cols-2 bg-white rounded-lg shadow-md p-8 w-full max-w-xl">
+            <h2 class="text-2xl font-semibold mb-6 text-center col-span-2">Contactanos</h2>
+            <form class="col-span-1">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-700">Nombre</label>
+                    <input type="text" id="name" name="name" class="border rounded-md w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring focus:ring-blue-300" placeholder="Octavio" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+                    <input type="email" id="email" name="email" class="border rounded-md w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring focus:ring-blue-300" placeholder="john.doe@example.com" required>
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-sm font-medium text-gray-700">Número de teléfono</label>
+                    <input type="tel" id="phone" name="phone" class="border rounded-md w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring focus:ring-blue-300" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium text-gray-700">Mensaje</label>
+                    <textarea id="message" name="message" class="border rounded-md w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring focus:ring-blue-300" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+                </div>
+                <div class="flex items-center justify-center mt-6 self-end">
+                    <button type="submit" class="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:ring focus:ring-blue-300">Enviar</button>
+                </div>
+            </form>
+            <div class="col-span-1">
+                <div class="mb-4">
+                    <label for="last_name" class="block text-sm font-medium text-gray-700">Apellidos</label>
+                    <input type="text" id="last_name" name="last_name" class="border rounded-md w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring focus:ring-blue-300" placeholder="Chong Hernandez" required>
+                </div>
             </div>
-            <p class="text-xl text-gray-600 mt-5">Conoce más de nosotros y de nuestras distintas recetas por algunos de los mejores chefs de México</p>
         </div>
-    </section>
+    </div>
     <footer class="Informacion bg-gray-800 text-white">
         <div class="footer-container flex flex-wrap justify-center py-10">
             <div class="column text-center">
